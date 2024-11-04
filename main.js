@@ -4,13 +4,13 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
+const APIKey = 'dde2ba42aa8bf98d8e59cbe24b181de7';
+const city = document.querySelector('.search-box input').value;
+
+
+
 
 search.addEventListener('click', () => {
-    const APIKey = 'dde2ba42aa8bf98d8e59cbe24b181de7';
-    const city = document.querySelector('.search-box input').value;
-    search.classList.add('fa-x');
-    search.classList.remove('fa-magnifying-glass');
-    
     
     if (city === '')
     return;
